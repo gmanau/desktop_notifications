@@ -1,6 +1,6 @@
 # Simple desktop notifications
 
-This is a simple javascript to manage and show desktop notifications with custom sound for all modern web browsers.
+This is a simple javascript to manage and show desktop notifications with custom sound for all modern web browsers. Check [caniuse.com](http://caniuse.com/#search=notifications) for extended info.
 It works with:
 * Google Chrome 22 and above
 * Firefox 22 and above
