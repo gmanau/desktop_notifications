@@ -7,7 +7,7 @@ It works with:
 * Safari 6 and above
 * Opera 25 and above
 
-## Usage
+## Usage and demo
 Simply add `desktop_notifications.js` (or the minified one) to your HTML and call desktopNotifications methods.
 Check `demo.html` to see it in action.
 
