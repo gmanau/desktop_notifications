@@ -42,7 +42,7 @@ Show notification when they are permitted. Available parameters:
 * `body` The notification body
 * `tag` Allow to set a tag or topic to each notification in order to group them by topic and avoid to fill the user screen of similar notifications.
 * `options` object with this fields:
-··* `icon` URL of the notification image
-··* `timeout` Auto-hide timeout in milliseconds
-··* `sound` URL of the custom sound to play on notification show
-··* `onclose` Callback function to be called on notification close event
+    * `icon` URL of the notification image
+    * `timeout` Auto-hide timeout in milliseconds
+    * `sound` URL of the custom sound to play on notification show
+    * `onclose` Callback function to be called on notification close event
