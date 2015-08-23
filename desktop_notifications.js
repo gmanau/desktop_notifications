@@ -11,7 +11,7 @@ var desktopNotifications = function() {
 		return (_supported != false);
 	}
 
-	var isPermited = function() {
+	var isPermitted = function() {
 		if (this.isSupported()) {
 			
 			if (window.Notification && window.Notification.permissionLevel) {
@@ -27,13 +27,13 @@ var desktopNotifications = function() {
 	}
 
 	var isDenied = function() {
-		return (this.isSupported() && !this.isPermited() && _permission == 'denied');
+		return (this.isSupported() && !this.isPermitted() && _permission == 'denied');
 	}
 
 	var requestPermission = function(callbackFn, showTipWhenDenied) {
 		callbackFn = callbackFn || function() {};
 
-		if (this.isSupported() && !this.isPermited()) {
+		if (this.isSupported() && !this.isPermitted()) {
         	if (this.isDenied()) {
         		if (_isChrome) {
         			alert('You have blocked notifications.\nOpen "chrome://settings/contentExceptions#notifications" in a new tab and remove blocking.');
@@ -67,7 +67,7 @@ var desktopNotifications = function() {
 		options.timeout = options.timeout || 10000;
 		options.onclose = options.onclose || function() {};
 
-		if (_tags.indexOf(options.tag) == -1 && this.isSupported() && this.isPermited()) {
+		if (_tags.indexOf(options.tag) == -1 && this.isSupported() && this.isPermitted()) {
 			_tags.push(options.tag);
 
             if (window.Notification) { 
@@ -97,7 +97,7 @@ var desktopNotifications = function() {
 
 	return {
 		isSupported: isSupported,
-		isPermited: isPermited,
+		isPermitted: isPermitted,
 		isDenied: isDenied,
 		requestPermission: requestPermission,
 		showNotification: showNotification
