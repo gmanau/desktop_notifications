@@ -1,5 +1,5 @@
 # Simple desktop notifications
-=====
+
 This is a simple javascript to manage and show desktop notifications with custom sound for all modern web browsers.
 It works with:
 * Google Chrome 22 and above
