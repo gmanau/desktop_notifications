@@ -85,11 +85,14 @@ var desktopNotifications = function() {
 				s.play();
             }
 
+            notification.onclose = function() {
+				_tags.splice(_tags.indexOf(options.tag), 1);
+           		options.onclose(notification);
+            }
+
            	setTimeout(function() { 
            		notification.close();
-           		_tags.splice(_tags.indexOf(options.tag), 1);
-           		options.onclose(notification); }, 
-           	options.timeout); 
+           	}, options.timeout); 
 		}
 
 		return notification;
